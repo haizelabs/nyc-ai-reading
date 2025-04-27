@@ -67,4 +67,4 @@ A Meta RM is trained on a dataset comprising both successful and failed rollouts
 
 ## 🔍 Follow-up Resources
 - WIP: Haize OS implementation
-- WIP: Brendan's Colab for principle and rationale generation
+- Brendan's early experiments on using GRM-style prompting (principles $\to$ rationales & reward) with LLM judges as a reward for training debate and joke generation models [here](https://github.com/brendanhogan/DeepSeekRL-Extended/tree/llm_rewards_grm)
