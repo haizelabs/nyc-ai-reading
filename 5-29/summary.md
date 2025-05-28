@@ -16,8 +16,13 @@ The authors assert that this is not some quirk of the data that is seen during R
 * When/is SFT a necessary first step in RL? Qwen models have something in the pre-training distribution that makes them exceptional at instruction-following for reasoning; this has made them a popular initialization base model for RL.
 
 ### Tangential Discussion Points — *What does RL Actually Learn?*
-* https://arxiv.org/abs/2505.11711
-* https://www.interconnects.ai/p/reinforcement-learning-with-random
+* [Reinforcement Learning Finetunes Small Subnetworks in Large Language Models](https://arxiv.org/abs/2505.11711)
+* [Spurious Rewards: Rethinking Training Signals in RLVR](https://rethink-rlvr.notion.site/Spurious-Rewards-Rethinking-Training-Signals-in-RLVR-1f4df34dac1880948858f95aeb88872f)
+  * Using a variety of rewards (random, majority vote, incorrect) provides a lift on math/coding tasks with Qwen models, but not with others
+  * Qwen is a good initialization since it frequently leverages code-use in its reasoning traces
+  > Broadly, we hypothesize that differences in RLVR training outcomes are due to differences in the specific reasoning strategies learned by each model during pretraining.
+  * Random rewards should produce mean-zero advantages, but due to clipping, the GRPO is non-zero!
+  > We conjecture that the apparent “training signal” in random reward training is an artifact of the optimization algorithm’s bias toward exploiting existing priors learned in pretraining.
 
 ## Methodology
 For the SFT experiments, they simply finetune on prompt-response dialogues. Hence, there are no verifier/revision steps as in the RL setup. They do ablate with these in Appendix C.1., but find little generlization improvement.
@@ -33,7 +38,7 @@ Authors focus on two bespoke tasks — arithmetic reasoning (`GeneralPoints`) an
 ### Takeaways
 * RL generalizes to unseen rules, whereas SFT simply memorizes the rules seen.
 * SFT important for RL training, as a first step to encourage instruction-following for the task's reasoning format.
-> Note that due to the difference in backbone model, our results do not contradict with DeepSeekAI et al. (2025), which suggests that SFT is unnecessary for downstream RL training.
+    > Note that due to the difference in backbone model, our results do not contradict with DeepSeekAI et al. (2025), which suggests that SFT is unnecessary for downstream RL training.
 
 * Even training SFT on sub-optimal trajectories (i.e., "wind-y" attempt + verifier multi-turn dialogues) doesn't solve the generalization problem. See Appendix C.1.
 * Scaling up verification improves generalization.
