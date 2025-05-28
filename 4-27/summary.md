@@ -66,5 +66,5 @@ A Meta RM is trained on a dataset comprising both successful and failed rollouts
     - If the latter, then the Meta RM is likely more useful given its rating ability is not pinned to any specific set of underlying data to be scored.
 
 ## 🔍 Follow-up Resources
-- Haize OS implementation: [j1-micro](https://github.com/haizelabs/j1-micro)
+- Haize Labs open-source implementation with tiny models (1.7B/0.6B): [j1-micro](https://github.com/haizelabs/j1-micro)
 - Brendan's early experiments on using GRM-style prompting (principles $\to$ rationales & reward) with LLM judges as a reward for training debate and joke generation models [here](https://github.com/brendanhogan/DeepSeekRL-Extended/tree/llm_rewards_grm)

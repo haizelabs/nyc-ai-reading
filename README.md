@@ -2,9 +2,8 @@
 
 NYC AI is so back :rocket:.
 
-<div align="center">
-<img src="assets/nyc-airg.png" width="400" alt="NYC AI Reading Group">
-</div>
+* **[May 29, 2025]** [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-Training](./5-29/summary.md) (Chu, et al., 2025)
+* **[Apr 27, 2025]** [Inference-Time Scaling for Generalist Reward Modeling](./4-27/summary.md) (DeepSeek, et al., 2025)
 
 ## About
 
@@ -45,7 +44,7 @@ We welcome contributions to make this reading group better:
 
 ## Contact
 
-{ leonard@haizelabs.com, nimit@haizelabs.com, w.brown@columbia.edu }
+{ Leonard Tang <leonard@haizelabs.com>, Nimit Kalra <nimit@haizelabs.com>, Will Brown <w.brown@columbia.edu> }
 
 ---
 
