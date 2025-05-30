@@ -44,7 +44,24 @@ Authors focus on two bespoke tasks — arithmetic reasoning (`GeneralPoints`) an
 * Scaling up verification improves generalization.
 
 ## Group Comments/Questions
-TBD!
+* Aaron says...
+
+    * The tasks are kind of unfair and a "trap" for getting SFT to overfit.
+    * Pretraining and SFT in this setting are fairly similar given the output is a few tokens (easy to overfit on this particular task)
+    * Nimit & Sachit: But the ablation in C.1. (suboptimal trajectories) kind of points against this memorization claim, because they do imitation learning on longer sequences. BUT, unclear how "suboptimal" is "suboptimal"; if the trajectory is total garbage, then the task is still susceptible to spurious correlations.
+
+* How can we control "OOD"-ness? Right now it's just binary
+
+    * In card game, some ideas:
+        * Permute the meaning of the cards (the more permutations, the more OOD)
+        * Increase the number of cards
+        * Change the range of the output (no longer just trying to get to 24)
+
+* What other interesting RL tasks are people trying? 
+
+    * Andrew is working on VLM RL for design
+    * Sachit is working on desktop environments (Linux and Windows)
+
 
 ## 🔍 Follow-up Resources
 TBD!
