@@ -2,15 +2,16 @@
 
 NYC AI is so back :rocket:.
 
-* **[May 29, 2025]** [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-Training](./5-29/summary.md) (Chu, et al., 2025)
-* **[Apr 27, 2025]** [Inference-Time Scaling for Generalist Reward Modeling](./4-27/summary.md) (DeepSeek, et al., 2025)
+* **[June 26, 2025]** [Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models](./6-26) (Song et al., 2025)
+* **[May 29, 2025]** [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-Training](./5-29) (Chu et al., 2025)
+* **[Apr 27, 2025]** [Inference-Time Scaling for Generalist Reward Modeling](./4-27) (DeepSeek et al., 2025)
 
 ## About
 
 The **NYC AI Reading Group** brings together AI researchers and practitioners to:
 - Stay up to date with frontier AI research
 - Meet and engage with thoughtful, curious minds re: the above
-- Imbibe copious amounts of caffeine and ~knowledge~
+- Imbibe copious amounts of caffeine/pizza/bagels and \~knowledge\~
 - Build an enduring AI community in the greatest city in the world
 
 ## Schedule
