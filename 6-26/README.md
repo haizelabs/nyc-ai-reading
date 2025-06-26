@@ -44,11 +44,23 @@ e.g., for the pointwise CoT verification strategy, the utility is simply binary 
   * handles the bounded improvement ceiling issue for generators that are already highly competent
   * empirically find that it is more accurate than comparing performance of intermediate checkpoints (details?)
 * Implication the $\ln(\text{FLOPs}) \propto \mathsf{gap_{rel}}$ scaling law?
+* Thoughts on the verification methods? A bit sus
+  * Why is there no "CoT Multiple Choice"? Could do many CoT rollouts, parse score, and derive estimator.
 * What tasks have ~zero generation-verification gap?
   * What about negative?
+    * "Some MC verification incurs non-positive gap" -- why do we think that is?
+* Scaling laws?
+  * Impliciation is that verification ability grows faster than generation ability w.r.t. pre-training flops. Thoughts on why?
 * Scaling verification (i.e., # verifications per generation)?
   * they do ensembles of different verification strategies, which works well
   * authors don't do this, but say follow up works should
+* "metric to predict a model’s “self-improvability” on specific tasks"
+  * How do we actually measure generation difficulty and verification difficulty?
+* Iterative self-improvement....
+  * Note the drop in diversity in later iterations, so much so pass@k decreases at large k. No new information --> saturation in 2/3 rounds.
+  * "This trend may result from the model’s inability to verify rare, yet correct, answers, potentially leading to convergence on incorrect solutions during the self-improvement process."
+    * How do we think about improving the verifiers for corner cases...? Can we quantify this? What are the "adversarial examples" we can construct here?
+
 
 ## Group Comments/Questions
 TBD!
