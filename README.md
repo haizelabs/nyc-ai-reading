@@ -24,7 +24,7 @@ The **NYC AI Reading Group** brings together AI researchers and practitioners to
 
 Join our community:
    - Sign up for our [mailing list](https://atrui71w.paperform.co/)
-   - Join our [Discord server](https://discord.gg/gZQFmWXK)
+   - Join our [Discord server](https://discord.gg/WKqpswnV)
 
 Paper suggestions are welcome from all participants.
 
